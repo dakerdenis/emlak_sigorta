@@ -37,7 +37,7 @@ if (!$connection) {
                     <meta charset="UTF-8">
                     <meta http-equiv="X-UA-Compatible" content="IE=edge">
                     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-                    <title>Əmlak Siğorta</title>
+                    <title>Property Insurance</title>
                     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
                     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
                     <link rel="stylesheet" href="../style.css"> 
@@ -66,13 +66,13 @@ if (!$connection) {
 </div>
 
 <div class="main__image__pc">
-    <img src="./Illstration.svg" alt="">
+    <img src="../Illstration.svg" alt="">
 </div>
 
 <div class="main__form__container">
     <div class="main__container__desc">
         <p>
-            Əmlak Sığortası üçün müraciət
+        Application for Property Insurance
         </p>
     </div>
     
@@ -80,19 +80,19 @@ if (!$connection) {
     <div class="main__container__form">
         <form id="login" method="POST">
             <div class="form__desc">
-                <p>Müştəri məlumatları</p>
+                <p>Customer information</p>
             </div>
             <div class="form__input__container">
-                <input type="text" id="name" name="name" required  placeholder="Ad">
+                <input type="text" id="name" name="name" required  placeholder="Name">
             </div>
             <div class="form__input__container">
-                <input type="text" id="surname" name="surname"   placeholder="Soyad">
+                <input type="text" id="surname" name="surname"   placeholder="Surname">
             </div>
             <div class="form__input__container">
-                <input type="text" id="number" name="number"  placeholder="Əlaqə nömrəsi">
+                <input type="text" id="number" name="number"  placeholder="Phone Number">
             </div>
             <div class="form__input__container_textarea">
-                <textarea name="message" id="message" name="message" placeholder="Qeyd"></textarea>
+                <textarea name="message" id="message" name="message" placeholder="Note"></textarea>
             </div>
             <br>
             <div class="g-recaptcha" data-sitekey="6Lcirw8hAAAAAK2-oS0g_eueKVqYAtpwqNxlX0x0"></div>
@@ -101,7 +101,7 @@ if (!$connection) {
 
             <div class="form__button">
                 <button name="login" type="submit" class="g-recaptcha" 
-               >Müraciet Et</button>
+               >Apply</button>
             </div>
         </form>
     </div>
