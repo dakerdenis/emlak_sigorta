@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
     <title>Əmlak Siğorta</title>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 </head>
 <body>
     <div class="main__container">
@@ -43,7 +47,7 @@
             
     
             <div class="main__container__form">
-                <form action="">
+                <form action="./index.html" id="form" method="POST">
                     <div class="form__desc">
                         <p>Müştəri məlumatları</p>
                     </div>
@@ -60,10 +64,14 @@
                     <div class="form__input__container_textarea">
                         <textarea name="message" id="message" placeholder="Qeyd"></textarea>
                     </div>
+                    <br>
+                    <div class="g-recaptcha" data-sitekey="6Lcirw8hAAAAAK2-oS0g_eueKVqYAtpwqNxlX0x0"></div>
+                    <br>
+                    <div class="text_error" id="recaptchaError"></div>
     
                     <div class="form__button">
-                        <input type="submit" value="Müraciyət Et">
-                        
+                        <button name="submit" type="submit" class="g-recaptcha" 
+                       >Müraciet Et</button>
                     </div>
                 </form>
             </div>
@@ -71,6 +79,38 @@
 
 
     </div>
+
+    
+    <script>
+        $(document).ready(function(){
+                $("#form").on("submit", function(event){
+                    event.preventDefault()
+            var captcha = grecaptcha.getResponse();
+
+            if (!captcha.length){
+                $('#recaptchaError').text("Captcha error ");
+            } else {
+                $('#recaptchaError').text('');
+                document.getElementById("form").submit();
+
+              // let dataForm = $(this).serialize()
+
+              // $.ajax({
+              //     url: '/index.php',
+              //     method: 'post',
+              //     dataType: 'html',
+              //     data: dataForm,
+              //     success: function(data){
+              //         console.log(data);
+
+              //         grecaptcha.reset();
+              //     }
+              // })
+            }
+                })
+        })
+    </script>
+
     <!----front end  CREATED BY DENIS AKERSHTEYN for 4 hours
   ///////////////////////////////////
   https://www.linkedin.com/in/denis-akershteyn-985358197/
