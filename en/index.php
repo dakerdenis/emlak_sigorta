@@ -53,13 +53,13 @@ if (!$connection) {
         </div>
 
         <div class="language__container">
-            <a  href="#" class="language_element active_">
+            <a  href="#" class="language_element ">
                 AZ
             </a>
-            <a  href="./en/index.php" class="language_element">
+            <a  href="#" class="language_element active_">
                 EN
             </a>
-            <a  href="./ru/index.php" class="language_element">
+            <a  href="#" class="language_element">
                 RU
             </a>
         </div>
