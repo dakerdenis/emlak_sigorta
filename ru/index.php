@@ -40,7 +40,7 @@ if (!$connection) {
                     <title>Əmlak Siğorta</title>
                     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
                     <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-                    <link rel="stylesheet" href="./style.css"> 
+                    <link rel="stylesheet" href="../style.css"> 
                 </head>
                 <body>
                 <div class="main__container">
@@ -53,10 +53,10 @@ if (!$connection) {
         </div>
 
         <div class="language__container">
-            <a  href="#" class="language_element ">
+            <a  href="../index.php" class="language_element ">
                 AZ
             </a>
-            <a  href="#" class="language_element ">
+            <a  href="../en/index.php" class="language_element ">
                 EN
             </a>
             <a  href="#" class="language_element active_">
