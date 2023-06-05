@@ -7,7 +7,7 @@
   box-sizing: border-box;
 }
 body {
-  background: url('./style/imgs/123.jpg');
+  background: url('./imgs/123.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   
