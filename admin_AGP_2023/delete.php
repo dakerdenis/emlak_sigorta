@@ -12,7 +12,7 @@ if(isset($_GET['id'])){
 
     $id = $_GET['id'];
 
-    $query = "DELETE FROM users WHERE `users`.`id` = {$id}";
+    $query = "DELETE FROM emlak WHERE `emlak`.`id` = {$id}";
 
     $delete = mysqli_query($connection, $query);
 
@@ -32,33 +32,3 @@ header("Location: ./admin.php");
 
 
 
-
-
-
-<div class="main__list__wrapper__element">
-                                    <div class="wrapper__element_id">
-                                        <?= $row['id'] ?>
-                                     </div>
-                                     <div class="wrapper__element_name">
-                                         <p>
-                                             <?= $row['name'] ?>
-                                         </p>
-                                     </div>
-                                     <div class="wrapper__element_surname">
-                                         <p>
-                                             <?= $row['surname'] ?>
-                                         </p>
-                                     </div>
-                                     <div class="popup_main">
-                                         <button class="open_popup">Показать номер</button>
-                                         <div class="popup_body">
-                                             <div class="popup_back"></div>
-                                             <div class="popup_contain">
-                                                 <a href="./delete.php?id=<?= $row['id'] ?>" class="popup_close">x</a>
-                                                 <br>
-                                                 <?= $row['phone'] ?>
-                                             </div>
-                                         </div>
-                                     </div>
-
-                                 </div>

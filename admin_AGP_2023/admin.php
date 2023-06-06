@@ -136,7 +136,7 @@ if (empty($_SESSION["authenticated"]) || $_SESSION["authenticated"] != 'true') {
                                      <a href="https://wa.me/<?php echo $row['number'] ?>">WhatsApp</a> 
                                  
 
-                                     <a href="https://wa.me/<?php echo $row['number'] ?>">Delete</a> 
+                                     <a href="./delete.php?id=<?= $row['id'] ?>">Delete</a> 
 
                                     </div>
                     
