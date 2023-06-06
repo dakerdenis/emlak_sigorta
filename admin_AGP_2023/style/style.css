@@ -236,10 +236,12 @@ padding: 40px;
     margin-left: 10px;
 }
 .wrapper__element_number{
-    margin-left: 20px;
+
     width: 190px;
 }
-
+.whatsapp{
+    width: 115px;
+}
 
 .open_popup{
     background:#BC1A1A;

@@ -214,6 +214,29 @@ font-family: 'Roboto', sans-serif;
     border-radius: 6px;
     cursor: pointer;
 }
+@media only screen and (max-width: 450px){
+    .main__image__pc{
+display: none;
+visibility: hidden;
+    }
+    .main__container__form {
+        padding: 20px;
+    }
+    .main__form__container {
+        padding-top: 90px;
+        width: 90%;
+    }
+    .main__container__desc {
+        line-height: 1.2;
+        font-size: 22px;
+    }
+    .form__input__container input {
+        font-size: 15px;
+    }
+    .form__input__container textarea {
+        font-size: 15px;
+    }
+}
 
 
 

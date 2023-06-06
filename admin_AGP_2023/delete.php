@@ -7,7 +7,7 @@ if (empty($_SESSION["authenticated"]) || $_SESSION["authenticated"] != 'true') {
     exit();
 }
 
-$connection = mysqli_connect('localhost', 'root', '', 'users');
+$connection = mysqli_connect('localhost', 'root', '', 'emlak');
 if(isset($_GET['id'])){
 
     $id = $_GET['id'];
