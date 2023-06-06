@@ -72,6 +72,10 @@ if (empty($_SESSION["authenticated"]) || $_SESSION["authenticated"] != 'true') {
                     <div class="list__desc__wp">
                         <p>Whatsapp</p>
                     </div>
+
+                    <div class="list__desc__delete">
+                        <p>Delete</p>
+                    </div>
                 </div>
 
                 <div class="main__list__wrapper">
@@ -129,8 +133,12 @@ if (empty($_SESSION["authenticated"]) || $_SESSION["authenticated"] != 'true') {
                                              <?= $row['number'] ?>
                                          </p>
                                      </div>
-                                     <a href="https://www.daker.site">WhatsApp</a> 
-                                 </div>
+                                     <a href="https://wa.me/<?php echo $row['number'] ?>">WhatsApp</a> 
+                                 
+
+                                     <a href="https://wa.me/<?php echo $row['number'] ?>">Delete</a> 
+
+                                    </div>
                     
 
                           <?php                     

@@ -124,7 +124,7 @@ if (!$connection) {
                 <input type="text" id="surname" name="surname"   placeholder="Фамилия">
             </div>
             <div class="form__input__container">
-                <input type="text" id="number" name="number"  placeholder="Телефонный номер">
+                <input type="text" id="number" name="number" value="994"  placeholder="Телефонный номер">
             </div>
             <div class="form__input__container_textarea">
                 <textarea name="message" id="message" name="message" placeholder="Заметки"></textarea>

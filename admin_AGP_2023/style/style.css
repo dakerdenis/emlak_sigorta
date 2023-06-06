@@ -230,12 +230,14 @@ padding: 40px;
 }
 .list__desc__phone{
     margin-left: 20px;
-    width: 180px;
+    width: 190px;
 }
-
+.list__desc__delete{
+    margin-left: 10px;
+}
 .wrapper__element_number{
     margin-left: 20px;
-    width: 175px;
+    width: 190px;
 }
 
 

@@ -89,7 +89,7 @@ if (!$connection) {
                 <input type="text" id="surname" name="surname"   placeholder="Soyad">
             </div>
             <div class="form__input__container">
-                <input type="text" id="number" name="number" value="+994"  placeholder="Əlaqə nömrəsi">
+                <input type="text" id="number" name="number" value="994"  placeholder="Əlaqə nömrəsi">
             </div>
             <div class="form__input__container_textarea">
                 <textarea name="message" id="message" name="message" placeholder="Qeyd"></textarea>

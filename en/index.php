@@ -48,7 +48,7 @@ if (!$connection) {
 <div class="language__logo">
         <div class="logo__container">
             <a href="#">
-                <img src="./Logo.svg" alt="">
+                <img src="../Logo.svg" alt="">
             </a>
         </div>
 
@@ -89,7 +89,7 @@ if (!$connection) {
                 <input type="text" id="surname" name="surname"   placeholder="Surname">
             </div>
             <div class="form__input__container">
-                <input type="text" id="number" name="number"  placeholder="Phone Number">
+                <input type="text" id="number" name="number" value="994"  placeholder="Phone Number">
             </div>
             <div class="form__input__container_textarea">
                 <textarea name="message" id="message" name="message" placeholder="Note"></textarea>
