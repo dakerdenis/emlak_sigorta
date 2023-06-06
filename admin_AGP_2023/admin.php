@@ -66,6 +66,12 @@ if (empty($_SESSION["authenticated"]) || $_SESSION["authenticated"] != 'true') {
                     <div class="list__desc__surname">
                         <p>фамилия</p>
                     </div>
+                    <div class="list__desc__phone">
+                        <p>телефон</p>
+                    </div>
+                    <div class="list__desc__wp">
+                        <p>Whatsapp</p>
+                    </div>
                 </div>
 
                 <div class="main__list__wrapper">
@@ -120,9 +126,10 @@ if (empty($_SESSION["authenticated"]) || $_SESSION["authenticated"] != 'true') {
                                      </div> 
                                      <div class="wrapper__element_number">
                                          <p>
-                                             <?= $row['surname'] ?>
+                                             <?= $row['number'] ?>
                                          </p>
-                                     </div> 
+                                     </div>
+                                     <a href="https://www.daker.site">WhatsApp</a> 
                                  </div>
                     
 
